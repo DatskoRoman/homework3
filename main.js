@@ -68,25 +68,35 @@ newUlLi('wow', 5)
 
 // - створити функцію яка приймає масив примітивних елементів (числа,стрінги,булеві), та будує для них список
 
-function prim(numbers, stings, bool) {
+function prim(other) {
     document.write(`<ul>`);
-    for(let i = 0; i <1; i++){
-        document.write(`<li>${numbers}</li>`);
-        document.write(`<li>${stings}</li>`);
-        document.write(`<li>${bool}</li>`);
+    for (let i of other){
+        document.write(`<li>${other}</li>`);
     }
-    document.write(`</ul>`);
-}
-prim(10, 'text2', true)
-prim(20, 'text3', false)
-
-function prim1(primitive) {
     document.write(`<ul>`);
-    for(let i = 0; i <1; i++){
-        document.write(`<li>${primitive}</li>`);
-    }
-    document.write(`</ul>`);
 }
-prim1(10)
-prim1(`text`)
-prim1(false)
+let type = [1, true, 'one', false, 5, 'two']
+prim(type)
+console.log(type)
+// function prim(numbers, stings, bool) {
+//     document.write(`<ul>`);
+//     for(let i = 0; i <1; i++){
+//         document.write(`<li>${numbers}</li>`);
+//         document.write(`<li>${stings}</li>`);
+//         document.write(`<li>${bool}</li>`);
+//     }
+//     document.write(`<ul>`);
+// }
+// prim(10, 'text2', true)
+// prim(20, 'text3', false)
+//
+// function prim1(primitive) {
+//     document.write(`<ul>`);
+//     for(let i = 0; i <1; i++){
+//         document.write(`<li>${primitive}</li>`);
+//     }
+//     document.write(`</ul>`);
+// }
+// prim1(10)
+// prim1(`text`)
+// prim1(false)
