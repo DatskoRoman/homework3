@@ -76,8 +76,8 @@ function prim(other) {
     document.write(`<ul>`);
 }
 let type = [1, true, 'one', false, 5, 'two']
-prim(type)
-console.log(type)
+prim(type);
+console.log(type);
 // function prim(numbers, stings, bool) {
 //     document.write(`<ul>`);
 //     for(let i = 0; i <1; i++){
